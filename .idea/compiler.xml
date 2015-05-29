@@ -32,6 +32,16 @@
         <module name="studyZookeeper" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="algorithms" target="1.5" />
+      <module name="marvinsworld" target="1.5" />
+      <module name="studyConcurrency" target="1.5" />
+      <module name="studyDubbo" target="1.5" />
+      <module name="studyJVM" target="1.5" />
+      <module name="studyMQ" target="1.5" />
+      <module name="studyNIO" target="1.5" />
+      <module name="studySpring" target="1.5" />
+      <module name="studyZookeeper" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-
