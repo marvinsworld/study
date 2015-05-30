@@ -10,7 +10,7 @@ public class ABA {
 
     public static void main(String[] args) throws InterruptedException {
         Thread intT1 = new Thread(new Runnable() {
-            @Override
+
             public void run() {
                 atomicInt.compareAndSet(100, 101);
                 atomicInt.compareAndSet(101, 100);
@@ -18,7 +18,7 @@ public class ABA {
         });
 
         Thread intT2 = new Thread(new Runnable() {
-            @Override
+
             public void run() {
                 try {
                     TimeUnit.SECONDS.sleep(1);
@@ -35,7 +35,7 @@ public class ABA {
         intT2.join();
 
         Thread refT1 = new Thread(new Runnable() {
-            @Override
+
             public void run() {
                 try {
                     TimeUnit.SECONDS.sleep(1);
@@ -47,7 +47,7 @@ public class ABA {
         });
 
         Thread refT2 = new Thread(new Runnable() {
-            @Override
+
             public void run() {
                 int stamp = atomicStampedRef.getStamp();
                 try {
