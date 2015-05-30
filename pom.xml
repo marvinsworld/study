@@ -16,7 +16,6 @@
         <module>studySpring</module>
         <module>studyJVM</module>
         <module>studyDubbo</module>
-        <module>studyNIO</module>
     </modules>
 
 
