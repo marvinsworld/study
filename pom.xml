@@ -16,6 +16,7 @@
         <module>studySpring</module>
         <module>studyJVM</module>
         <module>studyDubbo</module>
+        <module>studyPerformance</module>
     </modules>
 
     <dependencyManagement>
