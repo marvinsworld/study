@@ -1,4 +1,4 @@
-package com.marvinsworld.demo;
+package com.marvinsworld.demo.limitflow;
 
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.Stat;

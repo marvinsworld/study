@@ -1,4 +1,4 @@
-package com.marvinsworld.demo.limitflow;
+package com.marvinsworld.demo.limitflow.limitflow;
 
 import java.util.concurrent.Semaphore;
 

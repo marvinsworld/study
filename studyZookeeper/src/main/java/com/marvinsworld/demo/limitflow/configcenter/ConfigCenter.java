@@ -1,4 +1,4 @@
-package com.marvinsworld.demo.configcenter;
+package com.marvinsworld.demo.limitflow.configcenter;
 
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;

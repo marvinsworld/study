@@ -1,4 +1,4 @@
-package com.marvinsworld.demo;
+package com.marvinsworld.demo.limitflow;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

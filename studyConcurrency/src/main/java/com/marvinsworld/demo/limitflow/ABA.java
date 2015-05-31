@@ -1,4 +1,4 @@
-package com.marvinsworld.demo;
+package com.marvinsworld.demo.limitflow;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;

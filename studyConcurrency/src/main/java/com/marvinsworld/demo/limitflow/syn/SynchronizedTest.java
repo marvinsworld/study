@@ -1,4 +1,4 @@
-package com.marvinsworld.demo.syn;
+package com.marvinsworld.demo.limitflow.syn;
 
 /**
  * Description:

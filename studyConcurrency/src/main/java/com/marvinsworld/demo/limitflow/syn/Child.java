@@ -1,4 +1,4 @@
-package com.marvinsworld.demo.syn;
+package com.marvinsworld.demo.limitflow.syn;
 
 /**
  * 测试synchronized重入锁,没有父类实例,只有子类实例.

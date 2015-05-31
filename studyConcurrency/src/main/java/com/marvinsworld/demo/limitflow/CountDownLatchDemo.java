@@ -1,4 +1,4 @@
-package com.marvinsworld.demo;
+package com.marvinsworld.demo.limitflow;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;

@@ -1,4 +1,4 @@
-package com.marvinsworld.demo.executor;
+package com.marvinsworld.demo.limitflow.executor;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
