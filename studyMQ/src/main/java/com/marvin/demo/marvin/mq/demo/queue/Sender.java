@@ -1,4 +1,4 @@
-package com.marvin.demo.marvin.mq.demo.queue;
+package com.marvinsworld.demo.marvin.mq.demo.queue;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.marvin.demo;
+package com.marvinsworld.demo;
 
 import java.util.ArrayList;
 import java.util.List;
