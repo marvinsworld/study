@@ -5,8 +5,8 @@ import java.util.concurrent.Semaphore;
 /**
  * Description:限制流量
  *
- * @author Marvin
- * @since 2015-5-30 10:49
+ * @author Marvinsworld
+ * @since 2015/5/31 10:49
  */
 public class LimitFlowUsingSemaphore {
 
