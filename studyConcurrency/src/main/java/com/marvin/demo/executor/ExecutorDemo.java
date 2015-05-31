@@ -1,4 +1,4 @@
-package com.marvin.demo.marvin.demo.executor;
+package com.marvin.demo.executor;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

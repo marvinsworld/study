@@ -1,4 +1,4 @@
-package com.marvin.demo.marvin;
+package com.marvin.demo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.concurrent.*;
 public class FutureDemo {
 
     public static class Task implements Callable<String> {
-        @Override
+
         public String call() throws Exception {
             String tid = String.valueOf(Thread.currentThread().getId());
             System.out.printf("Thread#%s : in call\n", tid);

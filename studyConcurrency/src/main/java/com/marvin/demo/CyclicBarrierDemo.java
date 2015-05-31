@@ -1,4 +1,4 @@
-package com.marvin.demo.marvin;
+package com.marvin.demo;
 
 import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;

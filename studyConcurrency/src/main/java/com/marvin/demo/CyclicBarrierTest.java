@@ -1,4 +1,4 @@
-package com.marvin.demo.marvin;
+package com.marvin.demo;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

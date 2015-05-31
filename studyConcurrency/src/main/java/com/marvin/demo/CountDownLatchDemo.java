@@ -1,4 +1,4 @@
-package com.marvin.demo.marvin;
+package com.marvin.demo;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
