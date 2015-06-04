@@ -13,7 +13,7 @@ import org.apache.curator.retry.ExponentialBackoffRetry;
  */
 public class ConfigCenterWithMultipleClient {
 
-    private final static String PATH = "/multipleClientNode";
+    static String PATH = "/create";
 
     /**
      * 创建客户端
@@ -63,7 +63,11 @@ public class ConfigCenterWithMultipleClient {
         CuratorFramework client = configCenter.createClient();
         client.start();
         client.newNamespaceAwareEnsurePath(PATH);
+        NodeCache nodeCache = configCenter.watch(client, PATH);
+        nodeCache.start(true);
+
         client.setData().forPath(PATH, "222".getBytes());
+        System.out.println("-------------------change");
 
         try {
             Thread.sleep(1000*60);

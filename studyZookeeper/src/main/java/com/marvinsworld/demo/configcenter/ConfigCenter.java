@@ -42,12 +42,8 @@ public class ConfigCenter {
         ConfigCenter configCenter = new ConfigCenter();
 
         CuratorFramework client = configCenter.createClient();
-
-        //configCenter.reg(client);
         client.start();
-
         client.newNamespaceAwareEnsurePath("/create");
-
         NodeCache nodeCache = configCenter.watch(client, "/create");
         nodeCache.start(true);
 
