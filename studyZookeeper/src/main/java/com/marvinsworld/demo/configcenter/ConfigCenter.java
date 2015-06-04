@@ -5,8 +5,6 @@ import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.cache.NodeCache;
 import org.apache.curator.framework.recipes.cache.NodeCacheListener;
-import org.apache.curator.framework.state.ConnectionState;
-import org.apache.curator.framework.state.ConnectionStateListener;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 
 /**
@@ -21,19 +19,19 @@ public class ConfigCenter {
         return client;
     }
 
-    public void reg(CuratorFramework client){
-        client.getConnectionStateListenable().addListener(new ConnectionStateListener() {
-            public void stateChanged(CuratorFramework curatorFramework, ConnectionState connectionState) {
-                System.out.println("---"+connectionState.name());
-            }
-        });
-    }
+//    public void reg(CuratorFramework client){
+//        client.getConnectionStateListenable().addListener(new ConnectionStateListener() {
+//            public void stateChanged(CuratorFramework curatorFramework, ConnectionState connectionState) {
+//                System.out.println("---"+connectionState.name());
+//            }
+//        });
+//    }
 
     public NodeCache watch(CuratorFramework client,String path){
         final NodeCache nodeCache = new NodeCache(client,path);
         nodeCache.getListenable().addListener(new NodeCacheListener() {
             public void nodeChanged() throws Exception {
-                System.out.println("NodeCache changed, data is: " + new String(nodeCache.getCurrentData().getData()));
+                System.out.println("-----------NodeCache changed, data is: " + new String(nodeCache.getCurrentData().getData()));
             }
         });
 
@@ -53,6 +51,6 @@ public class ConfigCenter {
         NodeCache nodeCache = configCenter.watch(client, "/create");
         nodeCache.start(true);
 
-        client.setData().forPath("/create", "1111".getBytes());
+        client.setData().forPath("/create", "222".getBytes());
     }
 }
