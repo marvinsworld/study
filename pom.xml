@@ -17,6 +17,7 @@
         <module>studyJVM</module>
         <module>studyDubbo</module>
         <module>studyPerformance</module>
+        <module>studyScala</module>
     </modules>
 
     <dependencyManagement>
