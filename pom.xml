@@ -12,7 +12,7 @@
         <module>studyMQ</module>
         <module>studyConcurrency</module>
         <module>studyZookeeper</module>
-        <module>algorithms</module>
+        <module>studyAlgorithms</module>
         <module>studySpring</module>
         <module>studyJVM</module>
         <module>studyDubbo</module>
